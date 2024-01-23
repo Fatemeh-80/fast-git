@@ -11,3 +11,4 @@ Bypassing Middleware Layers", ACM, 2007.
 [18] Sami Beydeda and Volker Gruhn (Eds.), Testing 
 Commercial-off-the-Shelf Components and 
 Systems, Springer, ISBN: 3-540-21871-8 2005.
+*********** good Moreira sunshine ********
