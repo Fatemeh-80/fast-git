@@ -1,0 +1,62 @@
+کد جاوا سوال 1
+
+
+
+package com.taz.databaeapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatEditText;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    AppCompatEditText edtId,edtName,edtMobile;
+    AppCompatButton btnInsert, btnclear;
+
+    SQLiteDatabase myDataBase;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        edtId=findViewById(R.id.edtId);
+        edtName=findViewById(R.id.edtName);
+        edtMobile=findViewById(R.id.edtMobile);
+        btnInsert=findViewById(R.id.btnInsert);
+        btnClear=findViewById(R.id.btnClear);
+
+        myDataBase=this.openOrCreateDatabase("dbinfo",MODE_PRIVATE,null);
+        myDataBase.execSQL("CREATE TABLE IF NOT EXISTS tblinfo (id INT,name VARCHAR, mobile INT,PRIMARY KEY(id))");
+
+        btnInsert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDataBase.execSQL("INSERT INTO tblinfo (id,name,mobile) VALUES ("+edtId.getText().toString()+"," +
+                        "'"+edtName.getText().toString()+"',"+edtMobile.getText().toString()+")");
+                Toast.makeText(getApplicationContext(), "saved information", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+         btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edtId.setText("");
+                edtName.setText("");
+                edtMobile.setText("");
+            }
+        });
+
+             }while(cu.moveToNext());
+
+
+
+    }
+}
+    
+

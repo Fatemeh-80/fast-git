@@ -1,0 +1,13 @@
+Multi-Dimensional Separation of Concerns", 
+ICSE, ACM, pp. 107, 1999. 
+[16] Ana Moreira, Awais Rashid, and Joao Araujo, 
+Multi-Dimensional Separation of Concerns in 
+Requirements Engineering, Int'l Conf. on 
+Requirements Engg. (RE), IEEE CS, pp. 285-
+296, 2005. 
+[17] Omer Erdem Demir, Eric Wohlstadter, and 
+Stefan Tai, "An Aspect-oriented Approach to 
+Bypassing Middleware Layers", ACM, 2007. 
+[18] Sami Beydeda and Volker Gruhn (Eds.), Testing 
+Commercial-off-the-Shelf Components and 
+Systems, Springer, ISBN: 3-540-21871-8 2005.
